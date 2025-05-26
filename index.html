@@ -19,14 +19,14 @@
   <div class="hero-content flex-col lg:flex-row-reverse">
     <div class="card w-full max-w-sm shrink-0 shadow-2xl">
       <div class="card-body">
-        <fieldset class="fieldset">
+        <form class="fieldset">
           <label class="label">Acount Number</label>
-          <input type="text" class="input" placeholder="Type Your Number" />
+          <input type="text" class="input" placeholder="Type Your Number" required />
           <label class="label">Pin</label>
-          <input type="number" class="input" placeholder="Your Pin" />
+          <input type="number" class="input" placeholder="Your Pin" required />
           <div><a class="link link-hover">Forgot password?</a></div>
-          <button class="btn btn-neutral mt-4">Login</button>
-        </fieldset>
+          <button id="logInBTN" class="btn btn-neutral mt-4" >Login</button>
+        </form>
       </div>
     </div>
   </div>
@@ -34,5 +34,7 @@
       </div>
     </div>
   </section>
+
+<script src="./script/logIn.js"></script>
 </body>
 </html>
