@@ -18,7 +18,7 @@
           <div class="logoAmount flex items-center">
             <img src="./assets/Group.png" class="w-12" alt="" />
             <div class="headerText">
-              <h1 class="text-2xl font-bold">$4500</h1>
+              <h1 class="text-2xl font-bold">$<span id="mainbalance">4500</span></h1>
               <p class="text-gray-600">Available Balance</p>
             </div>
           </div>
@@ -94,15 +94,16 @@
               <br>
               <label class="">Amount to Add</label>
               <br>
-              <input id="userID" type="text" class="input rounded-2xl my-2" placeholder="Type Your Number"required/>
+              <input id="amoundADD" type="text" class="input rounded-2xl my-2" placeholder="Type Your Number"required/>
               <br>
               <label class="">Pin</label>
               <br>
               <input id="userPin" type="number" class="input rounded-2xl my-2" placeholder="Your Pin" required/>
           </div>
-          <button class="bg-blue-600 text-white w-full p-3 my-3 rounded-2xl">Add Money</button>
+          <button id="addMoneyBTN" class="bg-blue-600 text-white w-full p-3 my-3 rounded-2xl">Add Money</button>
         </div>
       </main>
     </section>
+  <script src="./script/addAmount.js"></script>
   </body>
 </html>
