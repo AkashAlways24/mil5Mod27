@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Main Page</title>
-</head>
-<body>
-  <h1>Hello World</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-800">
+    <section class="logInArea bg-slate-100 h-screen w-9/12 mx-auto">
+      <header class="mainPageHeader">
+        <nav class="flex justify-between items-center p-5 shadow-lg">
+          <div class="logoAmount flex items-center">
+            <img src="./assets/Group.png" class="w-12" alt="" />
+            <div class="headerText">
+              <h1 class="text-2xl font-bold">$4500</h1>
+              <p class="text-gray-600">Available Balance</p>
+            </div>
+          </div>
+          <div class="logOut">
+            <button class="btn">Log Out</button>
+          </div>
+        </nav>
+      </header>
+      <main class="mt-8 p-5">
+        <div class="fastText">
+          <h1 class="text-2xl">🔥 Welcome to Payooo!</h1>
+          <p class="text-gray-600">
+            Enjoy easy and convenient financial services with us. Cashout charge
+            is low and
+          </p>
+        </div>
+        <!-- itmes area grid -->
+        <div class="itmesArea grid grid-cols-3 gap-4 mt-8">
+          <div
+            class="itme flex flex-col items-center rounded py-5 border border-gray-300 border-solid"
+          >
+            <img src="./assets/wallet1.png" alt="" />
+            <p>Add Money</p>
+          </div>
+          <div
+            class="itme flex flex-col items-center rounded py-5 border border-gray-300 border-solid"
+          >
+            <img src="./assets/send1.png" alt="" />
+            <p>Cashout</p>
+          </div>
+          <div
+            class="itme flex flex-col items-center rounded py-5 border border-gray-300 border-solid"
+          >
+            <img src="./assets/money1.png" alt="" />
+            <p>Transfer M</p>
+          </div>
+          <div
+            class="itme flex flex-col items-center rounded py-5 border border-gray-300 border-solid"
+          >
+            <img src="./assets/bonus1.png" alt="" />
+            <p>Get Bonus</p>
+          </div>
+          <div
+            class="itme flex flex-col items-center rounded py-5 border border-gray-300 border-solid"
+          >
+            <img src="./assets/purse1.png" alt="" />
+            <p>Pay Bill</p>
+          </div>
+          <div
+            class="itme flex flex-col items-center rounded py-5 border border-gray-300 border-solid"
+          >
+            <img src="./assets/transaction1.png" alt="" />
+            <p>Transactions</p>
+          </div>
+        </div>
+
+        <!-- Add Money area start  -->
+        <div class="addMoney">
+          <h1 class=" my-5">Add Money</h1>
+          <!-- add money input area  -->
+          <div class="addMoneyInputs">
+            <legend>Select A Bank</legend>
+            <select class="select select-ghost">
+              <option disabled selected>Select A Bank</option>
+              <option value="bkash">Bkash</option>
+              <option value="nagod">Nagod</option>
+              <option value="dbbl">DBBL</option>
+            </select>
+            <form class="gap-3">
+              <label class="">Bank Account Number</label>
+              <input id="userID" type="text" class="input rounded-2xl my-2" placeholder="Type Your Number"required/>
+              
+              <label class="">Amount to Add</label>
+              <input id="userID" type="text" class="input rounded-2xl my-2" placeholder="Type Your Number"required/>
+              
+              <label class="">Pin</label>
+              <input id="userPin" type="number" class="input rounded-2xl my-2" placeholder="Your Pin" required/>
+          </div>
+          <button class="bg-blue-600 text-white w-full p-3 my-3 rounded-2xl">Add Money</button>
+        </div>
+      </main>
+    </section>
+  </body>
 </html>

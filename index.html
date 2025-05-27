@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-  <section class="logIn bg-slate-800 ">
-    <div class="logInArea bg-slate-100 flex flex-col justify-center   h-screen w-7/12 mx-auto">
-      <div class="images  flex justify-center items-center mt-6">
-        <img class="absolute w-48" src="./assets/bg.png" alt="">
-        <img class=" " src="./assets/Group.png" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <section class="logIn bg-slate-800">
+      <div class="logInArea bg-slate-100 flex flex-col justify-center h-screen w-7/12 mx-auto">
+        <div class="images flex justify-center items-center mt-6">
+          <img class="absolute w-48" src="./assets/bg.png" alt="" />
+          <img class=" " src="./assets/Group.png" alt="" />
+        </div>
+        <div class="fromArea">
+          <div class="hero">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                  <form class="fieldset">
+                    <label class="label">Acount Number</label>
+                    <input
+                      id="userID"
+                      type="text"
+                      class="input"
+                      placeholder="Type Your Number"
+                      required
+                    />
+                    <label class="label">Pin</label>
+                    <input
+                      id="userPin"
+                      type="number"
+                      class="input"
+                      placeholder="Your Pin"
+                      required
+                    />
+                    <div><a class="link link-hover">Forgot password?</a></div>
+                    <button id="logInBTN" class="btn btn-neutral mt-4">
+                      Login
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="fromArea">
-        <div class="hero">
-  <div class="hero-content flex-col lg:flex-row-reverse">
-    <div class="card w-full max-w-sm shrink-0 shadow-2xl">
-      <div class="card-body">
-        <form class="fieldset">
-          <label class="label">Acount Number</label>
-          <input id="userID" type="text" class="input" placeholder="Type Your Number" required />
-          <label class="label">Pin</label>
-          <input id="userPin" type="number" class="input" placeholder="Your Pin" required />
-          <div><a class="link link-hover">Forgot password?</a></div>
-          <button id="logInBTN" class="btn btn-neutral mt-4" >Login</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-<script src="./script/logIn.js"></script>
-</body>
+    <script src="./script/logIn.js"></script>
+  </body>
 </html>
